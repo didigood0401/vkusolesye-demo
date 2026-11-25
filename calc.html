@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Калькулятор КБЖУ — Вкусолесье</title>
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body class="calcpage">
+<div class="topbar"><span>Доставка по Москве · заказ от 1000 ₽</span><a href="tel:+79851391400">+7-985-139-14-00</a></div>
+<header class="head">
+  <a class="brand" href="index.html"><img src="img/logo.jpg" alt="Вкусолесье"><b>Вкусолесье</b></a>
+  <nav class="nav"><a href="index.html#catalog">Каталог</a><a href="calc.html">Калькулятор КБЖУ</a><a href="index.html#delivery">Доставка</a><a href="#contacts">Контакты</a></nav>
+  <a class="cartbtn" href="index.html">В каталог</a>
+</header>
+
+<section class="chero"><h1>Калькулятор КБЖУ</h1><p>Составьте тарелку из наших продуктов и узнайте калории, белки, жиры и углеводы.</p></section>
+<div class="cwrap">
+  <div class="cpanel">
+    <h2>Состав тарелки</h2>
+    <div id="rows"></div>
+    <button class="btn ghost" id="addRow" type="button">+ Добавить продукт</button>
+  </div>
+  <div class="cpanel result">
+    <h2>Итого</h2>
+    <div class="donutwrap"><div class="donut" id="donut"><div><b id="tk">0</b><span>ккал</span></div></div>
+      <ul class="legend">
+        <li><i style="background:#3f4f2a"></i>Белки <b id="tb">0</b> г <em id="pb"></em></li>
+        <li><i style="background:#b8863b"></i>Жиры <b id="tf">0</b> г <em id="pf"></em></li>
+        <li><i style="background:#d9c29a"></i>Углеводы <b id="tc">0</b> г <em id="pc"></em></li>
+      </ul></div>
+    <small>Значения средние, на 100 г продукта; у конкретной партии могут отличаться.</small>
+  </div>
+</div>
+<section class="benefits"><h2>Чем полезно</h2><div class="bgrid" id="benefits"></div></section>
+<footer id="contacts">
+  <div><b>Вкусолесье</b><br>vkusolesye.ru<br>ИП Булахтин Александр Васильевич</div>
+  <div>+7-985-139-14-00<br>vkusolesye@mail.ru</div>
+  <div>Оферта · Политика конфиденциальности · Условия доставки и возврата<br><small>Демо-версия: товары, фото и цены условные</small></div>
+</footer>
+<script src="data.js?v=3"></script>
+<script src="calc.js?v=3"></script>
+</body>
+</html>

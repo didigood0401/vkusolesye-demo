@@ -41,3 +41,15 @@ fieldset{border:1px solid var(--sand);border-radius:8px}.err{color:#b3261e;margi
 .kb{font:12px system-ui;color:var(--green)}.good{font:13px/1.4 system-ui;color:#5b5a4a}
 .calc{display:grid;grid-template-columns:2fr 1fr;gap:12px;max-width:760px;font:14px system-ui}.calc label{display:flex;flex-direction:column;gap:4px}.calc select,.calc input{padding:9px;border:1px solid var(--sand);border-radius:8px;font:inherit}.cres,.calc .good{grid-column:1/-1}.cres{display:flex;flex-wrap:wrap;gap:8px 20px;background:var(--w);padding:14px;border-radius:10px;align-items:baseline}.cres b{font-size:22px}
 @media(max-width:700px){.calc{grid-template-columns:1fr}}
+.chero{padding:44px 5vw 20px;background:linear-gradient(120deg,var(--sand),var(--bg))}.chero h1{font-size:clamp(30px,4vw,46px)}.chero p{font:17px system-ui;margin:10px 0 0;max-width:560px}
+.cwrap{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;padding:30px 5vw;align-items:start}
+.cpanel{background:var(--w);border-radius:16px;padding:22px;box-shadow:0 3px 14px #0001}.cpanel h2{font-size:24px;margin-bottom:14px}
+.crow{display:grid;grid-template-columns:1fr 90px auto 32px;gap:8px;align-items:center;margin-bottom:10px;font:14px system-ui}
+.crow select,.crow input{padding:10px;border:1px solid var(--sand);border-radius:8px;font:inherit;min-width:0}.crow button{border:0;background:none;font-size:22px;cursor:pointer;color:#8a7a5a}
+.donutwrap{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.donut{width:170px;height:170px;border-radius:50%;display:grid;place-items:center;background:#e7dcc6}.donut>div{width:112px;height:112px;border-radius:50%;background:var(--w);display:flex;flex-direction:column;align-items:center;justify-content:center}.donut b{font-size:30px}.donut span{font:13px system-ui;color:#5b5a4a}
+.legend{list-style:none;margin:0;padding:0;font:15px/2 system-ui}.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:8px}.legend em{font-style:normal;color:#8a7a5a;margin-left:4px}
+.benefits{padding:10px 5vw 40px}.benefits h2{font-size:28px;margin-bottom:16px}
+.bgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.bcard{display:flex;gap:14px;background:var(--w);border-radius:14px;padding:12px;box-shadow:0 3px 14px #0001}.bcard img{width:84px;height:84px;object-fit:cover;border-radius:10px;flex:none}.bcard h3{font-size:17px}.bcard p{font:14px/1.4 system-ui;margin:4px 0}.bcard small{font:12px system-ui;color:var(--green)}
+@media(max-width:800px){.cwrap{grid-template-columns:1fr}.crow{grid-template-columns:1fr 80px auto 28px}}

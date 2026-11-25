@@ -5,30 +5,20 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Вкусолесье — фуршетные сеты, сыры, деликатесы в Москве</title>
 <meta name="description" content="Фуршетные сеты, сырная и мясная лавка, сухофрукты, чай, сладости и новогодняя коллекция. Доставка по Москве.">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <div class="topbar"><span>Доставка по Москве · заказ от 1000 ₽</span><a href="tel:+79851391400">+7-985-139-14-00</a></div>
 <header class="head">
   <a class="brand" href="#"><img src="img/logo.jpg" alt="Вкусолесье"><b>Вкусолесье</b></a>
-  <nav class="nav"><a href="#catalog">Каталог</a><a href="#calc">КБЖУ</a><a href="#delivery">Доставка</a><a href="#contacts">Контакты</a></nav>
+  <nav class="nav"><a href="#catalog">Каталог</a><a href="calc.html">Калькулятор КБЖУ</a><a href="#delivery">Доставка</a><a href="#contacts">Контакты</a></nav>
   <button class="cartbtn" id="openCart">Корзина <i id="cnt">0</i></button>
 </header>
 <section class="hero">
   <div><h1>Фуршетные сеты и деликатесы с доставкой по Москве</h1>
   <p>Сеты на 6–40 гостей, сыры, мясная лавка, чай и сладости. Заказ от 1000 ₽, доставка в выбранный день.</p>
-  <a class="btn" href="#catalog">Выбрать сет</a> <a class="btn ghost" href="#calc">Калькулятор КБЖУ</a></div>
+  <a class="btn" href="#catalog">Выбрать сет</a> <a class="btn ghost" href="calc.html">Калькулятор КБЖУ</a></div>
   <div class="heroimgs"><img src="img/ref1.jpg" alt=""><img src="img/ref2.jpg" alt=""></div>
-</section>
-<section id="calc" class="info">
-  <h2>Калькулятор КБЖУ</h2>
-  <div class="calc">
-    <label>Товар<select id="cprod"></select></label>
-    <label>Вес, г<input id="cg" type="number" min="1" value="100"></label>
-    <div id="cres" class="cres"></div>
-    <div id="cgood" class="good"></div>
-  </div>
-  <small>Значения средние, на 100 г продукта; у конкретной партии могут отличаться.</small>
 </section>
 <main id="catalog">
   <h2>Каталог</h2>
@@ -81,6 +71,7 @@
   <small>Демо: оплата и отправка заявки на vkusolesye@mail.ru — заглушки.</small>
 </form></div>
 <div class="toast" id="toast"></div>
-<script src="app.js?v=2"></script>
+<script src="data.js?v=3"></script>
+<script src="app.js?v=3"></script>
 </body>
 </html>
