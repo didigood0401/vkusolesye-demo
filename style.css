@@ -53,3 +53,5 @@ fieldset{border:1px solid var(--sand);border-radius:8px}.err{color:#b3261e;margi
 .bgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .bcard{display:flex;gap:14px;background:var(--w);border-radius:14px;padding:12px;box-shadow:0 3px 14px #0001}.bcard img{width:84px;height:84px;object-fit:cover;border-radius:10px;flex:none}.bcard h3{font-size:17px}.bcard p{font:14px/1.4 system-ui;margin:4px 0}.bcard small{font:12px system-ui;color:var(--green)}
 @media(max-width:800px){.cwrap{grid-template-columns:1fr}.crow{grid-template-columns:1fr 80px auto 28px}}
+.nf{aspect-ratio:1;display:grid;place-items:center;text-align:center;padding:12px;background:var(--sand);color:#6b5a3a;font:13px system-ui}
+.hero:has(.heroimgs)~x{}

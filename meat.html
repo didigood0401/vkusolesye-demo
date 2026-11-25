@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Мясная лавка — Вкусолесье</title>
+<meta name="description" content="Фуршетные сеты, сырная и мясная лавка, сухофрукты, чай, сладости и новогодняя коллекция. Доставка по Москве.">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<div class="topbar"><span>Демо: товары, фото и цены условные · заказ от 1000 ₽</span><a href="tel:+79851391400">+7-985-139-14-00</a></div>
+<header class="head">
+  <a class="brand" href="#"><img src="img/logo.jpg" alt="Вкусолесье"><b>Вкусолесье</b></a>
+  <nav class="nav"><a href="#catalog">Каталог</a><a href="meat.html">Мясная лавка</a><a href="calc.html">Калькулятор КБЖУ</a><a href="#delivery">Доставка</a><a href="#contacts">Контакты</a></nav>
+  <button class="cartbtn" id="openCart">Корзина <i id="cnt">0</i></button>
+</header>
+<section class="hero">
+  <div><h1>Мясная лавка: нарезка и деликатесы</h1>
+  <p>Ветчина, колбасы, сыровяленое мясо и готовая нарезка для стола и фуршета. Заказ от 1000 ₽, доставка в выбранный день.</p>
+  <a class="btn" href="#catalog">Выбрать нарезку</a> <a class="btn ghost" href="calc.html">Калькулятор КБЖУ</a></div>
+  
+</section>
+<main id="catalog">
+  <h2>Мясная лавка (деликатесы)</h2>
+  <div class="tabs" id="tabs"></div>
+  <div class="grid" id="grid"></div>
+</main>
+<section id="delivery" class="info">
+  <h2>Доставка и самовывоз</h2>
+  <table>
+   <tr><td>Минимальный заказ</td><td>1000 ₽</td></tr>
+   <tr><td>По Москве в пределах МКАД, заказ до 3000 ₽</td><td>500 ₽</td></tr>
+   <tr><td>В пределах МКАД, от 3000 до 5000 ₽</td><td>300 ₽</td></tr>
+   <tr><td>В пределах МКАД, от 5000 ₽</td><td>бесплатно</td></tr>
+   <tr><td>За пределами МКАД</td><td>обговаривается отдельно</td></tr>
+   <tr><td>Самовывоз</td><td>Москва, Лодочная, 29 · Москва, Абрамцевская 16с3</td></tr>
+  </table>
+</section>
+<footer id="contacts">
+  <div><b>Вкусолесье</b><br>vkusolesye.ru<br>ИП Булахтин Александр Васильевич</div>
+  <div>+7-985-139-14-00<br>vkusolesye@mail.ru</div>
+  <div>Оферта · Политика конфиденциальности · Условия доставки и возврата<br><small>Демо-версия: товары, фото и цены условные</small></div>
+</footer>
+
+<aside class="drawer" id="drawer">
+  <div class="dh"><h3>Корзина</h3><button id="closeCart">×</button></div>
+  <div id="lines"></div>
+  <div id="sum"></div>
+  <button class="btn full" id="toCheckout">Оформить заказ</button>
+</aside>
+<div class="modal" id="modal"><form id="form" class="mbox">
+  <h3>Оформление заказа</h3>
+  <label>Имя<input name="name" required></label>
+  <label>Телефон<input name="phone" required placeholder="+7"></label>
+  <label>Способ получения<select name="mode" id="mode">
+    <option value="msk">Доставка по Москве (в пределах МКАД)</option>
+    <option value="out">Доставка за МКАД (стоимость обговаривается)</option>
+    <option value="p1">Самовывоз: Москва, Лодочная, 29</option>
+    <option value="p2">Самовывоз: Москва, Абрамцевская 16с3</option></select></label>
+  <label id="addrw">Адрес доставки<input name="addr"></label>
+  <label>Комментарий<textarea name="comment" rows="2"></textarea></label>
+  <fieldset><legend>Оплата</legend>
+    <label class="r"><input type="radio" name="pay" value="card" checked> Картой онлайн</label>
+    <label class="r"><input type="radio" name="pay" value="sbp"> СБП</label>
+    <label class="r"><input type="radio" name="pay" value="cash"> Наличными при получении</label>
+    <div id="cardbox"><input placeholder="Номер карты" inputmode="numeric"><div class="two"><input placeholder="ММ/ГГ"><input placeholder="CVC"></div></div>
+  </fieldset>
+  <div id="msum"></div>
+  <p id="err" class="err"></p>
+  <div class="two"><button type="button" class="btn ghost" id="mclose">Назад</button><button class="btn">Подтвердить заказ</button></div>
+  <small>Демо: оплата и отправка заявки на vkusolesye@mail.ru — заглушки.</small>
+</form></div>
+<div class="toast" id="toast"></div>
+<script>window.ONLY='meat'</script><script src="data.js?v=3"></script>
+<script src="app.js?v=3"></script>
+</body>
+</html>
