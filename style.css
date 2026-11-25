@@ -10,8 +10,8 @@ a{color:inherit}h1,h2,h3{font-weight:normal;margin:0}
 .btn.ghost{background:transparent;color:var(--green);border:1px solid var(--green)}.btn.full{width:100%}
 .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center;padding:50px 5vw;background:linear-gradient(120deg,var(--sand),var(--bg))}
 .hero h1{font-size:clamp(30px,4.5vw,52px);line-height:1.1}.hero p{font:18px/1.5 system-ui;max-width:460px;margin:18px 0 24px}
-.heroimgs{display:grid;grid-template-columns:1fr 1fr;gap:12px}.heroimgs img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:120px 120px 14px 14px;box-shadow:0 10px 30px #0003}
-.heroimgs img+img{margin-top:30px}
+.heroimgs{display:grid;grid-template-columns:1fr 1fr;gap:12px}.heroimgs img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;box-shadow:0 10px 30px #0003}
+
 main,.info{padding:40px 5vw}h2{font-size:32px;margin-bottom:18px}
 .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
 .tabs button{font:14px system-ui;border:1px solid var(--green);background:none;color:var(--green);border-radius:20px;padding:8px 16px;cursor:pointer}
@@ -38,3 +38,6 @@ footer{background:var(--dark);color:#e9dec4;display:grid;grid-template-columns:r
 fieldset{border:1px solid var(--sand);border-radius:8px}.err{color:#b3261e;margin:0;min-height:1em}
 .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,80px);background:var(--dark);color:#fff;padding:12px 22px;border-radius:24px;font:14px system-ui;transition:.3s;z-index:40;opacity:0}.toast.show{transform:translate(-50%,0);opacity:1}
 @media(max-width:700px){.hero{grid-template-columns:1fr}.nav{display:none}.cartbtn{margin-left:auto}.topbar span{display:none}}
+.kb{font:12px system-ui;color:var(--green)}.good{font:13px/1.4 system-ui;color:#5b5a4a}
+.calc{display:grid;grid-template-columns:2fr 1fr;gap:12px;max-width:760px;font:14px system-ui}.calc label{display:flex;flex-direction:column;gap:4px}.calc select,.calc input{padding:9px;border:1px solid var(--sand);border-radius:8px;font:inherit}.cres,.calc .good{grid-column:1/-1}.cres{display:flex;flex-wrap:wrap;gap:8px 20px;background:var(--w);padding:14px;border-radius:10px;align-items:baseline}.cres b{font-size:22px}
+@media(max-width:700px){.calc{grid-template-columns:1fr}}
